@@ -17,12 +17,12 @@
     </style>
 </head>
 <body>
-    <div class="container border-bottom">
+    <div class="container sticky-md-top  bg-black bg-opacity-75 ">
         <div class="header">
             
             <div class="row p-2 ">
                 <div class="col-6">
-                    <p class="fw-bolder nav-link text-white my-auto mx-1 fs-3">VSA</p>
+                    <p class="fw-bolder nav-link text-warning my-auto mx-1 fs-3">VSA.</p>
                     
                 </div>
                 
@@ -32,13 +32,13 @@
                             <li class="nav-item"><a href="#about" class="nav-link fs-6 fw-bolder text-warning link-underline-hover"><i class="bi bi-house me-3"></i>About Me</a></li>
                         </div> 
                         <div class="col-3">
-                            <li class="nav-item"><a href="" class="nav-link fs-6 fw-bolder text-white"><i class="bi bi-person-workspace me-3"></i>My Projects</a></li>
+                            <li class="nav-item"><a href="#projects" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-person-workspace me-3"></i>My Projects</a></li>
                         </div>
                         <div class="col-3">
-                            <li class="nav-item"><a href="" class="nav-link fs-6 fw-bolder text-white"><i class="bi bi-list-task me-3"></i> My Skills</a></li>
+                            <li class="nav-item"><a href="" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-list-task me-3"></i> My Skills</a></li>
                         </div>
                         <div class="col-3">
-                            <li class="nav-item"><a href="" class="nav-link fs-6 fw-bolder text-white"><i class="bi bi-people-fill me-3"></i>Socials</a></li>
+                            <li class="nav-item"><a href="" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-people-fill me-3"></i>Socials</a></li>
                         </div>
                     </ul>    
                 </div>
@@ -46,13 +46,42 @@
             
         </div>
     </div>
-    <div class="container p-5 mt-5 bg-info" id="about">
+    <div class="container p-5 mt-5" id="about">
         <div class="row">
-            <div class="col-6 p-5 mt-5 m-auto bg-danger">
-                <p class="text-white bg-black">hello</p>
+            <div class="col-6 p-5 mt-5 m-auto">
+                <p class="text-white fs-2 fw-bold text-white">LET ME <span class="text-warning">INTRODUCE</span> MYSELF</p>
+                <p class="text-white fs-4 fw-medium">I'm Vinuth Sri Arampath.</p>
+                <p class="text-white fs-4 fw-medium">An aspiring fullstack software engineer with skills in <span class="text-warning fst-italic">Java, HTML, CSS, Bootstrap, and MySQL.</span> </p>
+                <p class="text-white fs-4 fw-medium">I'm passionate about <span class="text-warning fst-italic">innovating in the software engineering field</span> and eager to connect with professionals to <span class="text-warning fst-italic">drive technological advancements.</span></p>
             </div>
-            <div class="col-6 p-5 mt-5 m-auto bg-warning">
-                <img src="./img/me.jpg" alt="" style="width: 350px;">
+            <div class=" row col-6 px-auto justify-content-center border-start">
+                <img src="./img/me.jpg" alt="" style="width: 500px;" class="rounded-5 mw-100 h-100 d-inline">
+            </div>
+        </div>
+    </div>
+
+    <div class="container m-5" id="projects">
+
+        <div class="container mb-5">
+            <h1 class="text-warning text-center"> My Recent <span>Projects</span></h1>
+            <p class="text-white fs-4 text-center">Here are some <span class="text-warning">projects</span> I have contribute upto now</p>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="card bg-transparent border-1 p-2" style="width: 18rem; border-color: orange;">
+                <img src="./img/project_gamex.com.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Game<sub>x</sub>.com</h5>
+                    <p class="card-text text-white">Simple website for gamers , which allows them them to read latest gaming news and host tournament and participate for esports tournaments.</p>
+                    <p class="card-text text-white">This website is only developed using only <span class="text-warning">HTML</span> and <span class="text-warning">CSS</span></p>
+                    <div class="row col-12">
+                        <div class="btn">
+                            <button type="button" class="btn text-bg-warning"><i class="bi bi-globe-americas"></i></button>
+                            <button type="button" class="btn text-bg-warning"><i class="bi bi-github"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
