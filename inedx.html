@@ -7,159 +7,143 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Vinuth Sri Arampath | Portfolio</title>
     <style>
-        body{
-            background-image: url(./img/background.jpg);
+        body {
+            background-image: url('./img/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: auto;
             background-attachment: fixed;
         }
 
-        .brder-thick{
-            border-width:15px;
+        .border-thick {
+            border-width: 15px;
+        }
+
+        .card-title {
+            text-transform: capitalize;
         }
     </style>
 </head>
 <body>
-    <div class="container sticky-md-top  bg-black bg-opacity-75 ">
+    <div class="container sticky-md-top bg-black bg-opacity-75">
         <div class="header">
-            
-            <div class="row p-2 ">
-                <div class="col-6">
-                    <p class="fw-bolder nav-link text-warning my-auto mx-1 fs-3">VSA.</p>
-                    
+            <div class="row p-2">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center text-md-center text-sm-center">
+                    <p class="fw-bolder text-warning my-auto fs-3">VSA.</p>
                 </div>
-                
-                <div class="row col-6">
-                    <ul class="nav align-content-around">
-                        <div class="col-3">
-                            <li class="nav-item"><a href="#about" class="nav-link fs-6 fw-bolder text-warning link-underline-hover"><i class="bi bi-house me-3"></i>About Me</a></li>
-                        </div> 
-                        <div class="col-3">
-                            <li class="nav-item"><a href="#projects" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-person-workspace me-3"></i>My Projects</a></li>
-                        </div>
-                        <div class="col-3">
-                            <li class="nav-item"><a href="#social" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-people-fill me-3"></i>My Socials</a></li>
-                        </div>
-                        <div class="col-3">
-                            <li class="nav-item"><a href="#skills" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-list-task me-3"></i> My Skills</a></li>
-                        </div>
-                        
-                    </ul>    
+                <div class="col-lg-6 d-none d-md-block">
+                    <ul class="nav justify-content-around">
+                        <li class="nav-item order-1"><a href="#about" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-house me-2"></i>About</a></li>
+                        <li class="nav-item order-2"><a href="#projects" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-person-workspace me-2"></i>Projects</a></li>
+                        <li class="nav-item order-3"><a href="#skills" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-list-task me-2"></i>Skills</a></li>
+                        <li class="nav-item order-4"><a href="#social" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-people-fill me-2"></i>Socials</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 d-md-none d-sm-flex flex-column align-items-center">
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item"><a href="#about" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-house me-2"></i>About</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-person-workspace me-2"></i>Projects</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-list-task me-2"></i>Skills</a></li>
+                        <li class="nav-item"><a href="#social" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-people-fill me-2"></i>Socials</a></li>
+                    </ul>
                 </div>
             </div>
-            
         </div>
     </div>
+
     <div class="container p-5 mt-5" id="about">
         <div class="row">
-            <div class="col-6 p-5 mt-5 m-auto">
-                <p class="text-white fs-2 fw-bold text-white">LET ME <span class="text-warning">INTRODUCE</span> MYSELF</p>
+            <div class="col-lg-6 p-5 mt-5 m-auto text-center text-lg-start">
+                <p class="text-white fs-2 fw-bold">LET ME <span class="text-warning">INTRODUCE</span> MYSELF</p>
                 <p class="text-white fs-4 fw-medium">I'm Vinuth Sri Arampath.</p>
                 <p class="text-white fs-4 fw-medium">An aspiring fullstack software engineer with skills in <span class="text-warning fst-italic">Java, HTML, CSS, Bootstrap, and MySQL.</span> </p>
                 <p class="text-white fs-4 fw-medium">I'm passionate about <span class="text-warning fst-italic">innovating in the software engineering field</span> and eager to connect with professionals to <span class="text-warning fst-italic">drive technological advancements.</span></p>
             </div>
-            <div class=" row col-6 px-auto justify-content-center border-start">
-                <img src="./img/me.jpg" alt="" style="width: 500px;" class="rounded-5 mw-100 h-100 d-inline">
+            <div class="col-lg-6 text-center">
+                <img src="./img/me.jpg" alt="Vinuth Sri Arampath" style="width: 100%; max-width: 500px;" class="rounded-5">
             </div>
         </div>
     </div>
 
-    <div class="container m-5" id="projects">
-
-        <div class="container mb-5">
-            <h1 class="text-warning text-center"> My Recent <span>Projects</span></h1>
-            <p class="text-white fs-4 text-center">Here are some <span class="text-warning">projects</span> I have contribute upto now</p>
+    <div class="container my-5" id="projects">
+        <div class="text-center mb-5">
+            <h1 class="text-warning">My Recent <span>Projects</span></h1>
+            <p class="text-white fs-4">Here are some <span class="text-warning">projects</span> I have contributed to so far</p>
         </div>
 
-
         <div class="row justify-content-center">
-            <div class="card bg-transparent border-1 p-2" style="width: 18rem; border-color: orange;">
-                <img src="./img/project_gamex.com.png" class="card-img-top" alt="...">
+            <div class="card bg-transparent border-1 p-2 m-2" style="width: 18rem; border-color: orange;">
+                <img src="./img/project_gamex.com.png" class="card-img-top" alt="Gamex.com">
                 <div class="card-body">
                     <h5 class="card-title text-warning">Game<sub>x</sub>.com</h5>
-                    <p class="card-text text-white">Simple website for gamers , which allows them them to read latest gaming news and host tournament and participate for esports tournaments.</p>
-                    <p class="card-text text-white">This website is only developed using only <span class="text-warning">HTML</span> and <span class="text-warning">CSS</span></p>
-                    <div class="row col-12">
-                        <div class="btn">
-                            <button type="button" class="btn text-bg-warning"><a href="https://vinuthsriarampath.github.io/gamex.com/" class="text-black"><i class="bi bi-globe-americas"></i></a></button>
-                            <button type="button" class="btn text-bg-warning"><a href="https://github.com/VinuthSriArampath/gamex.com" class="text-black"><i class="bi bi-github"></i></a></button>
-                        </div>
+                    <p class="card-text text-white">Simple website for gamers, which allows them to read the latest gaming news, host tournaments, and participate in esports tournaments.</p>
+                    <p class="card-text text-white">This website is developed using <span class="text-warning">HTML</span> and <span class="text-warning">CSS</span></p>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://vinuthsriarampath.github.io/gamex.com/" class="btn text-bg-warning"><i class="bi bi-globe-americas text-black"></i></a>
+                        <a href="https://github.com/VinuthSriArampath/gamex.com" class="btn text-bg-warning"><i class="bi bi-github text-black"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" id="skills">
-        <div class="row">
-            <h1 class="text-center text-white pb-4">Professional <span class="text-warning">SkillSet</span></h1>
-            <div class="col-1">
-
-            </div>
-            <div class="col-2">
-                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 200px; height: 100px;">
-                    <img src="./img/java.png" alt="">
+    <div class="container my-5" id="skills">
+        <h1 class="text-center text-white pb-4">Professional <span class="text-warning">SkillSet</span></h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 100%; height: 100px;">
+                    <img src="./img/java.png" alt="Java" style="max-height: 100%;">
                 </div>
                 <p class="text-white text-center">JAVA</p>
             </div>
-            <div class="col-2">
-                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 200px; height: 100px;">
-                    <img src="./img/html.png" alt="">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 100%; height: 100px;">
+                    <img src="./img/html.png" alt="HTML" style="max-height: 100%;">
                 </div>
                 <p class="text-white text-center">HTML</p>
             </div>
-            <div class="col-2">
-                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 200px; height: 100px;">
-                    <img src="./img/css.png" alt="">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 100%; height: 100px;">
+                    <img src="./img/css.png" alt="CSS" style="max-height: 100%;">
                 </div>
                 <p class="text-white text-center">CSS</p>
             </div>
-            <div class="col-2">
-                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 200px; height: 100px;">
-                    <img src="./img/Bootstrap.png" alt="">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 100%; height: 100px;">
+                    <img src="./img/Bootstrap.png" alt="Bootstrap" style="max-height: 100%;">
                 </div>
                 <p class="text-white text-center">BOOTSTRAP</p>
             </div>
-            <div class="col-2">
-                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 200px; height: 100px;">
-                    <img src="./img/Mysql.png" alt="">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="border border-warning rounded-3 d-flex justify-content-center p-2" style="width: 100%; height: 100px;">
+                    <img src="./img/Mysql.png" alt="MySQL" style="max-height: 100%;">
                 </div>
                 <p class="text-white text-center">MYSQL</p>
-            </div>
-            
-            <div class="col-1">
-                
             </div>
         </div>
     </div>
 
-
-    <div class="container m-5" id="social">
-
-        <div class="container mb-3">
-            <h1 class="text-white text-center">Find Me On</h1>
-            <p class="text-white fs-4 text-center">Feel free to<span class="text-warning"> connect </span>with me</p>
+    <div class="container my-5" id="social">
+        <div class="text-center mb-3">
+            <h1 class="text-white">Find Me On</h1>
+            <p class="text-white fs-4">Feel free to<span class="text-warning"> connect </span>with me</p>
         </div>
-        <div class="container mb-5 d-flex justify-content-center">
-            <a href="https://github.com/VinuthSriArampath"><button class="btn btn-round bg-warning mx-3 rounded-circle"><i class="bi bi-github  text-black"></i></button></a>
-            <a href="https://www.linkedin.com/in/vinuth-sri-arampath/"><button class="btn bg-warning mx-3 rounded-circle"><i class="bi bi-linkedin  text-black"></i></button></a>
-            
-            <!-- <button class="btn bg-warning mx-3 rounded-circle"><i class="bi bi-instagram  text-black"></i></button> -->
+        <div class="d-flex justify-content-center">
+            <a href="https://github.com/VinuthSriArampath" class="btn bg-warning mx-3 rounded-circle"><i class="bi bi-github text-black"></i></a>
+            <a href="https://www.linkedin.com/in/vinuth-sri-arampath/" class="btn bg-warning mx-3 rounded-circle"><i class="bi bi-linkedin text-black"></i></a>
         </div>
     </div>
 
     <div class="footer bg-black py-4 px-5">
         <div class="row">
-            <div class="col-6 ">
+            <div class="col-6">
                 <p class="text-white">Vinuth Sri Arampath</p>
             </div>
             <div class="col-6 d-flex justify-content-end">
-                <a href="https://github.com/VinuthSriArampath"><i class="bi bi-github  text-white mx-2"></i></a>
-                <a href="https://www.linkedin.com/in/vinuth-sri-arampath/"><i class="bi bi-linkedin  text-white mx-2"></i></a>
+                <a href="https://github.com/VinuthSriArampath"><i class="bi bi-github text-white mx-2"></i></a>
+                <a href="https://www.linkedin.com/in/vinuth-sri-arampath/"><i class="bi bi-linkedin text-white mx-2"></i></a>
             </div>
         </div>
     </div>
-    
 </body>
 </html>
