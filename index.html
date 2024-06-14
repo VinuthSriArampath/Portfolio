@@ -22,7 +22,44 @@
         .card-title {
             text-transform: capitalize;
         }
+
+        .cd-top {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            bottom: 40px;
+            right: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            /* image replacement properties */
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            background: #efba1a url(./img/arrow.svg) no-repeat center 50%;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility .3s;
+        }
+        .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+            transition: opacity .3s, visibility .3s;
+        }
+        .cd-top.cd-is-visible {
+            /* the button becomes visible */
+            visibility: visible;
+            opacity: 1;
+        }
+        .cd-top.cd-fade-out {
+            /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+            opacity: .5;
+        }
+        .no-touch .cd-top:hover {
+            background-color: #256ce5;
+            opacity: 1;
+        }
+
     </style>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container sticky-md-top bg-black bg-opacity-75">
@@ -32,7 +69,7 @@
                     <p class="fw-bolder text-warning my-auto fs-3">VSA.</p>
                 </div>
                 <div class="col-lg-6 d-none d-md-block">
-                    <ul class="nav justify-content-around">
+                    <ul class="nav justify-content-around" id="0">
                         <li class="nav-item order-1"><a href="#about" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-house me-2"></i>About</a></li>
                         <li class="nav-item order-2"><a href="#projects" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-person-workspace me-2"></i>Projects</a></li>
                         <li class="nav-item order-3"><a href="#skills" class="nav-link fs-6 fw-bolder text-warning"><i class="bi bi-list-task me-2"></i>Skills</a></li>
@@ -146,7 +183,6 @@
             <a href="https://www.linkedin.com/in/vinuth-sri-arampath/" class="btn bg-warning mx-3 rounded-circle"><i class="bi bi-linkedin text-black"></i></a>
         </div>
     </div>
-
     <div class="footer bg-black py-4 px-5">
         <div class="row">
             <div class="col-6">
@@ -158,5 +194,32 @@
             </div>
         </div>
     </div>
+
+    <a href="#0" class="cd-top">Top</a>
+
+    <!-- Script section -->
+    <script>
+        $(document).ready(function() {
+            var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('.cd-top').addClass('cd-is-visible');
+                    } else {
+                        $('.cd-top').removeClass('cd-is-visible');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('.cd-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        });
+    </script>
 </body>
 </html>
