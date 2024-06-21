@@ -1,0 +1,111 @@
+body {
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;
+    background-attachment: fixed;
+}
+
+.border-thick {
+    border-width: 15px;
+}
+
+.card-title {
+    text-transform: capitalize;
+}
+
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #efba1a url(./img/arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    transition: opacity .3s, visibility .3s;
+}
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top.cd-fade-out {
+    opacity: .5;
+}
+.no-touch .cd-top:hover {
+    background-color: #256ce5;
+    opacity: 1;
+}
+/* animations.css */
+.container {
+    animation: fadeIn 2s ease-in;
+}
+.header, .footer {
+    animation: slideInFromBottom 1s ease-out;
+}
+#about .col-lg-6:first-child {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+#about .col-lg-6:last-child {
+    animation: slideInFromRight 1s ease-in-out;
+}
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+    color: #efba1a;
+    transform: scale(1.1);
+}
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.border {
+    transition: transform 0.3s ease;
+}
+.border:hover {
+    transform: scale(1.1);
+}
+span:hover {
+    transform: scale(1.1);
+}
+.btn {
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+.cd-top {
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s ease;
+}
+.cd-top.cd-is-visible {
+    transform: translateY(-10px);
+}
+/*keyframes for animations*/
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideInFromBottom {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+@keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
